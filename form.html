@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formular</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fha3xlx.css" />
+  </head>
+  <body>
+    <main>
+      <form action="/receipt.html">
+        <div class="image-block">
+          <input required type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)" />
+          <label class="image-label" for="file" style="cursor: pointer">Upload image</label>
+          <img id="output" width="100%" />
+        </div>
+
+        <input required type="email" name="email" id="email" placeholder="Indtast din email her" />
+
+        <p>Indtast din email i feltet herover, og tryk på send. Læg derefter dine smykker i boksen.</p>
+
+        <input type="submit" name="" id="" />
+      </form>
+    </main>
+  </body>
+  <script>
+    let loadFile = function (event) {
+      let image = document.getElementById("output");
+      image.src = URL.createObjectURL(event.target.files[0]);
+      document.querySelector(".image-label").classList.add("hidden");
+    };
+  </script>
+</html>

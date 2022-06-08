@@ -1,0 +1,54 @@
+body{
+    display: block;
+    background-color: #e4dad1;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+p, li, a, input, label{
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: #473832;
+}
+.round-logo{
+    width: 12rem;
+    margin-top: 3rem;
+}
+
+a, input[type=submit]{
+    padding: 16px;
+    background-color: #c3b3ae;
+    margin-top: 2rem;
+    text-decoration: none;
+    border: none;
+}
+.image-block{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+   
+    margin: 3rem auto 3rem auto;
+  
+    border: #473832 2px solid;
+}
+
+.hidden{
+    display: none;
+}
+
+#email{
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #473832;
+
+}
+.logo{
+    width: 6rem;
+}
