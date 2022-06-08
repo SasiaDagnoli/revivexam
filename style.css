@@ -6,7 +6,7 @@ body{
     margin-right: auto;
     text-align: center;
 }
-p, li, a, input, label{
+p, li, a, input, label, button{
     font-family: futura-pt, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -15,7 +15,7 @@ p, li, a, input, label{
 }
 .round-logo{
     width: 12rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 a, input[type=submit]{
@@ -25,6 +25,10 @@ a, input[type=submit]{
     text-decoration: none;
     border: none;
 }
+.new-image-btn{
+    /* margin-bottom: 2rem; */
+    margin-top: 0;
+}
 .image-block{
     width: 15rem;
     height: 15rem;
@@ -33,7 +37,7 @@ a, input[type=submit]{
     
     flex-direction: column;
    
-    margin: 3rem auto 3rem auto;
+    margin: 3rem auto 1rem auto;
   
     border: #473832 2px solid;
 }
@@ -47,8 +51,21 @@ a, input[type=submit]{
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #473832;
-
+margin-top: 2rem;
 }
 .logo{
     width: 6rem;
+}
+.submit-btn{
+    margin-top: 0 !important;
+}
+.instructions{
+    margin-top: 2rem;
+}
+.trash-btn{
+    width: 10%;
+}
+.new-image-btn{
+    background-color: transparent;
+    border: none;
 }
