@@ -10,39 +10,18 @@
   </head>
   <body>
     <main>
-      <form action="/receipt.html">
+      <form action="receipt.html">
         <div class="image-block">
-          <input
-            required
-            type="file"
-            accept="image/*"
-            name="image"
-            id="file"
-            style="display: none"
-            onchange="loadFile(event)"
-          />
-          <label class="image-label" for="file" style="cursor: pointer"
-            >Upload image</label
-          >
+          <input required type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)" />
+          <label class="image-label" for="file" style="cursor: pointer">Upload image</label>
           <img id="output" width="100%" />
         </div>
 
-        <input
-          required
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Indtast din email her"
-        />
+        <input required type="email" name="email" id="email" placeholder="Indtast din email her" />
 
-        <p>
-          Indtast din email i feltet herover, og tryk på send. Læg derefter dine
-          smykker i boksen.
-        </p>
+        <p>Indtast din email i feltet herover, og tryk på send. Læg derefter dine smykker i boksen.</p>
 
-        <input type="submit" name="" id="" />
-        <!-- 
-        <button><a href="receipt.html">send</a></button> -->
+        <input type="submit" value="Send" />
       </form>
     </main>
   </body>
