@@ -12,17 +12,37 @@
     <main>
       <form action="receipt.html">
         <div class="image-block">
-          <input required type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)" />
-          <label class="image-label" for="file" style="cursor: pointer">Upload billede</label>
+          <input
+            required
+            type="file"
+            accept="image/*"
+            name="image"
+            id="file"
+            style="display: none"
+            onchange="loadFile(event)"
+          />
+          <label class="image-label" for="file" style="cursor: pointer"
+            >Upload billede</label
+          >
           <img id="output" width="100%" class="uploaded-image" />
         </div>
         <button type="button" class="new-image-btn hidden" onclick="newImage()">
           <img src="images/trash.png" alt="trashcan" class="trash-btn" />
         </button>
 
-        <input required type="email" name="email" id="email" placeholder="Indtast din email her" />
+        <input
+          required
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Indtast din email her"
+        />
 
-        <p class="instructions">Upload et billede af de smykker, du vil aflevere i boksen. Indtast derefter din email i feltet herover, og tryk på send. Læg derefter dine smykker i boksen.</p>
+        <p class="instructions">
+          Upload et billede af de smykker, du vil aflevere i boksen. Indtast
+          derefter din email i feltet herover, og tryk på send. Læg derefter
+          dine smykker i boksen.
+        </p>
 
         <input type="submit" value="Send" class="submit-btn" />
       </form>
@@ -47,5 +67,40 @@
       document.querySelector(".image-block").style.height = "15rem";
       document.querySelector(".new-image-btn").classList.add("hidden");
     }
+
+    /*     function beforePost() {
+      console.log("before post");
+
+      const form = document.querySelector("form");
+      form.setAttribute("novalidate", true);
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (form.checkValidity()) {
+          const data = {
+            uploaded_image: form.elements.image.value,
+            email: form.elements.email.value,
+          };
+          post(data);
+        } else {
+          form.reportValidity();
+        }
+      });
+    }
+
+    function post(data) {
+      const postData = JSON.stringify(data);
+      fetch("https://inclass-29e9.restdb.io/rest/upcycling", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json; charset=utf-8",
+          "x-apikey": "617695be8597142da1745a2c",
+          "cache-control": "no-cache",
+        },
+        body: postData,
+      })
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+    } */
   </script>
 </html>
