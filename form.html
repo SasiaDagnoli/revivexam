@@ -48,6 +48,7 @@
       </form>
     </main>
   </body>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   <script>
     let loadFile = function (event) {
       let image = document.getElementById("output");
@@ -67,6 +68,21 @@
       document.querySelector(".image-block").style.height = "15rem";
       document.querySelector(".new-image-btn").classList.add("hidden");
     }
+
+    /*  const inputs = document.querySelector("form"); */
+
+    /*     function sendMail() {
+      console.log("sendmail");
+      Email.send({
+        Host: "smtp.mailtrap.io",
+        Username: "66ff626944306f",
+        Password: "000ea1d8914f69",
+        To: "aisasn@gmail.com",
+        From: inputs.elements["email"].value,
+        Subject: "Test",
+        Body: inputs.elements["image"].value,
+      }).then((msg) => alert("Send succesful"));
+    } */
 
     /*     function beforePost() {
           console.log("before post"); */
