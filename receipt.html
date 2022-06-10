@@ -10,7 +10,7 @@
   </head>
   <body>
     <main>
-      <section>
+      <section class="receipt-section">
         <img src="images/upcycling_logo.png" alt="" class="round-logo" />
         <p>
           Tusind tak, fordi du sender dine smykker til upcycling hos Réviv Studio! <br />
@@ -21,7 +21,18 @@
           De bedste hilsner
         </p>
         <img src="images/logo_reviv.svg" alt="" class="logo" />
+        <br />
+        <br />
+        <br />
+        <a href="https://revivstudio.netlify.app/" class="webshop-link">Besøg vores webshop</a>
       </section>
     </main>
   </body>
+  <script>
+    setTimeout(goToShop, 7000);
+
+    function goToShop() {
+      window.location.assign("https://revivstudio.netlify.app/");
+    }
+  </script>
 </html>

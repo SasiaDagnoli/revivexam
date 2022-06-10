@@ -56,9 +56,7 @@ margin-top: 2rem;
 .logo{
     width: 6rem;
 }
-.submit-btn{
-    margin-top: 0 !important;
-}
+
 .instructions{
     margin-top: 2rem;
 }
@@ -68,4 +66,7 @@ margin-top: 2rem;
 .new-image-btn{
     background-color: transparent;
     border: none;
+}
+.webshop-link{
+    margin-top: 3rem;
 }

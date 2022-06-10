@@ -10,7 +10,8 @@
   </head>
   <body>
     <main>
-      <form action="receipt.html">
+      <form action="receipt.html" method="GET">
+        <p class="instructions">Upload et billede af de smykker, du vil aflevere i boksen. Indtast derefter din email i feltet herover, og tryk på send. Læg derefter dine smykker i boksen.</p>
         <div class="image-block">
           <input required type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)" />
           <label class="image-label" for="file" style="cursor: pointer">Upload billede</label>
@@ -21,8 +22,6 @@
         </button>
 
         <input required type="email" name="email" id="email" inputmode="email" placeholder="Indtast din email her" />
-
-        <p class="instructions">Upload et billede af de smykker, du vil aflevere i boksen. Indtast derefter din email i feltet herover, og tryk på send. Læg derefter dine smykker i boksen.</p>
 
         <input type="submit" name="send" value="Send" class="submit-btn" />
       </form>
