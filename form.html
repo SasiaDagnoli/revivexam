@@ -44,7 +44,7 @@
           dine smykker i boksen.
         </p>
 
-        <input type="submit" value="Send" class="submit-btn" />
+        <input type="submit" name="send" value="Send" class="submit-btn" />
       </form>
     </main>
   </body>
@@ -69,38 +69,40 @@
     }
 
     /*     function beforePost() {
-      console.log("before post");
+          console.log("before post"); */
 
-      const form = document.querySelector("form");
-      form.setAttribute("novalidate", true);
+    /*  const form = document.querySelector("form");
+          form.setAttribute("novalidate", true);
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        if (form.checkValidity()) {
-          const data = {
-            uploaded_image: form.elements.image.value,
-            email: form.elements.email.value,
-          };
-          post(data);
-        } else {
-          form.reportValidity();
-        }
-      });
-    }
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            if (form.checkValidity()) {
+              const data = {
+                uploaded_image: form.elements.image.value,
+                email: form.elements.email.value,
+              };
+              post(data);
+            } else {
+              form.reportValidity();
+            }
+          }); */
+    //post(formData);
+    //}
 
-    function post(data) {
-      const postData = JSON.stringify(data);
-      fetch("https://inclass-29e9.restdb.io/rest/upcycling", {
-        method: "post",
-        headers: {
-          "Content-Type": "application/json; charset=utf-8",
-          "x-apikey": "617695be8597142da1745a2c",
-          "cache-control": "no-cache",
-        },
-        body: postData,
-      })
-        .then((res) => res.json())
-        .then((data) => console.log(data));
-    } */
+    /*  function post(formData) {
+          console.log(formData);
+          //const postData = JSON.stringify(data);
+          fetch("https://inclass-29e9.restdb.io/media", {
+            method: "post",
+            headers: {
+              "Content-Type": "application/json; charset=utf-8",
+              "x-apikey": "617695be8597142da1745a2c",
+              "cache-control": "no-cache",
+            },
+            body: formData,
+          })
+            .then((res) => res.json())
+            .then((data) => console.log(data));
+        } */
   </script>
 </html>
