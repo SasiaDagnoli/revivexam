@@ -10,24 +10,45 @@
   </head>
   <body>
     <main>
-      <form action="receipt.html" method="GET">
-        <p class="instructions">Upload et billede af de smykker, du vil aflevere i boksen. Indtast derefter din email i feltet herover, og tryk på send. Læg derefter dine smykker i boksen.</p>
+      <form action="receipt.html">
+        <p class="instructions">
+          Upload et billede af de smykker, du vil aflevere i boksen. Indtast
+          derefter din email i feltet herover, og tryk på send. Læg derefter
+          dine smykker i boksen.
+        </p>
         <div class="image-block">
-          <input required type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)" />
-          <label class="image-label" for="file" style="cursor: pointer">Upload billede</label>
+          <input
+            required
+            type="file"
+            accept="image/*"
+            name="image"
+            id="file"
+            style="display: none"
+            onchange="loadFile(event)"
+          />
+          <label class="image-label" for="file" style="cursor: pointer"
+            >Upload billede</label
+          >
           <img id="output" width="100%" class="uploaded-image" />
         </div>
         <button type="button" class="new-image-btn hidden" onclick="newImage()">
           <img src="images/trash.png" alt="trashcan" class="trash-btn" />
         </button>
 
-        <input required type="email" name="email" id="email" inputmode="email" placeholder="Indtast din email her" />
+        <input
+          required
+          type="email"
+          name="email"
+          id="email-id"
+          inputmode="email"
+          placeholder="Indtast din email her"
+        />
 
         <input type="submit" name="send" value="Send" class="submit-btn" />
       </form>
     </main>
+    <!--  <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   </body>
-  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   <script>
     let loadFile = function (event) {
       let image = document.getElementById("output");
@@ -48,10 +69,12 @@
       document.querySelector(".new-image-btn").classList.add("hidden");
     }
 
-    /*  const inputs = document.querySelector("form"); */
+    /*   const inputs = document.querySelector("form");
+    console.log(inputs);
 
-    /*     function sendMail() {
+    function sendMail() {
       console.log("sendmail");
+      console.log(inputs.elements["image"].value);
       Email.send({
         Host: "smtp.mailtrap.io",
         Username: "66ff626944306f",
