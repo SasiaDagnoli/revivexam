@@ -12,37 +12,17 @@
     <main>
       <form action="receipt.html">
         <div class="image-block">
-          <input
-            required
-            type="file"
-            accept="image/*"
-            name="image"
-            id="file"
-            style="display: none"
-            onchange="loadFile(event)"
-          />
-          <label class="image-label" for="file" style="cursor: pointer"
-            >Upload billede</label
-          >
+          <input required type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)" />
+          <label class="image-label" for="file" style="cursor: pointer">Upload billede</label>
           <img id="output" width="100%" class="uploaded-image" />
         </div>
         <button type="button" class="new-image-btn hidden" onclick="newImage()">
           <img src="images/trash.png" alt="trashcan" class="trash-btn" />
         </button>
 
-        <input
-          required
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Indtast din email her"
-        />
+        <input required type="email" name="email" id="email" inputmode="email" placeholder="Indtast din email her" />
 
-        <p class="instructions">
-          Upload et billede af de smykker, du vil aflevere i boksen. Indtast
-          derefter din email i feltet herover, og tryk på send. Læg derefter
-          dine smykker i boksen.
-        </p>
+        <p class="instructions">Upload et billede af de smykker, du vil aflevere i boksen. Indtast derefter din email i feltet herover, og tryk på send. Læg derefter dine smykker i boksen.</p>
 
         <input type="submit" name="send" value="Send" class="submit-btn" />
       </form>
