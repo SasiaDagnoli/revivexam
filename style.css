@@ -46,7 +46,7 @@ a, input[type=submit]{
     display: none;
 }
 
-#email-id{
+#email{
     width: 90%;
     background-color: transparent;
     border: none;

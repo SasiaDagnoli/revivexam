@@ -14,7 +14,9 @@
         <p class="instructions">Upload et billede af de smykker, du vil aflevere i boksen. Indtast derefter din email i feltet herover, og tryk på send. Læg derefter dine smykker i boksen.</p>
         <div class="image-block">
           <input required type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)" />
-          <label class="image-label" for="file" style="cursor: pointer">Upload billede</label>
+
+          <label class="image-label" for="file" style="cursor: pointer"> Upload billede </label>
+
           <img id="output" width="100%" class="uploaded-image" />
         </div>
         <button type="button" class="new-image-btn hidden" onclick="newImage()">
